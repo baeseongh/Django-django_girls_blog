@@ -1,27 +1,12 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Django Girls Blog For Seonghyeon</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    </head>
-    <body>
-        <div>
-            <h1>Django Girls Blog For Seonghyeon</h1>
-=======
+
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block contents %}
     {% for post in posts %}
     <div class="post">      
         <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <div class="date">
-            <p>{{ post.published_date }}</p>
->>>>>>> 4cb568cc85feac9c694ba13c16a692ed7741a155
+            <p>{{ post.author }} | {{ post.published_date }}</p>
         </div>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
