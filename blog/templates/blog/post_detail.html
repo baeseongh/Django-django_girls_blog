@@ -16,9 +16,9 @@
             <a href="{% url 'post_edit' pk=post.pk %}">edit</a>
              | 
             <a href="{% url 'post_delete' pk=post.pk %}" id="delete">delete</a>
+             | 
             {% endif %}
         {% endif %}
-         | 
         <a href="{% url 'post_list' %}">back to home</a>
     </div>
 
