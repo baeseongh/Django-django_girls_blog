@@ -1,7 +1,8 @@
-h1 a {
+.title {
     color: #6b00bf;
     font-family: 'Lobster';
 }
+
 .page-header {
     background-color:#6b00bf;
     margin-top: 0;
@@ -16,10 +17,6 @@ h1 a {
 
 .content {
     margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
 }
 
 .date {
@@ -53,6 +50,11 @@ h1, h2, h3, h4 {
     color: white;
     text-align: right;
     font-size: 1.6rem;
+}
+
+.top-menu-custom-user a {
+    color: white;
+
 }
 
 .comment {

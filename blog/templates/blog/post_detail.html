@@ -2,12 +2,13 @@
 
 {% block contents %}
     <div class="post">             
-        <h1>{{ post.title }}</a></h1>
+        <h1>{{ post.title }}</h1>
         {% if post.published_date %}
         <div class="date">
             <p>{{ post.author }} | {{ post.published_date }}</p>
         </div>
         {% else %}
+            <p>{{ post.author }} | {{ post.published_date }}</p>
             <a href="{% url 'post_publish' pk=post.pk %}">Publish!</a>
         {% endif %} 
         <p>{{ post.text|linebreaksbr }}</p>
