@@ -66,7 +66,7 @@ def add_post_to_comment(request, pk):
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = post
-            comment.author = request.user
+            comment.author = request.user #작성 유저의 아이디가 들어가도록
             comment.save()
             return redirect('post_detail', pk=post.pk)
     else:
@@ -81,20 +81,11 @@ def comment_edit(request, pk):
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = comment.post
-            comment.author = request.user
             comment.save()
             return redirect('post_detail', pk=comment.post.pk)
     else:
         form = CommentForm(instance=comment)
     return render(request, 'blog/add_comment_to_post.html', {'form' : form})
-
-
-
-
-
-    comment = get_object_or_404(Comment, pk=pk)
-    comment.approve()
-    return redirect('post_detail', pk=comment.post.pk)
 
 @login_required
 def comment_delete(request, pk):
