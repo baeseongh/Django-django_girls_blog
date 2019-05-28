@@ -29,3 +29,13 @@ app/models.py
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post', related_name='comments', on_delete=models.CASCADE) 
 </pre>
+
+#### 옵션의 내용은 진행하지 않았음.
+
+#### 변동사항
+- 본인 댓글의 수정이 가능하게 함.
+- 댓글에 작성자 이름이 들어가게 함.
+
+#### 차후 수정해야할 것
+- 댓글 작성 및 수정을 detail 페이지에서 할 수 있도록
+- 회원가입 기능 구현
