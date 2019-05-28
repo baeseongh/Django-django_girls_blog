@@ -1,7 +1,11 @@
 # Django-django_girls_blog
 
+### 장고걸스 튜토리얼 (Django Girls Tutorial)
+https://tutorial.djangogirls.org/ko/
 
 ### 장고걸스 튜토리얼 : 심화 (Django Girls Tutorial: Extensions)
+https://tutorial-extensions.djangogirls.org/ko/
+
 #### 숙제 : 안전한 웹사이트 만들기
 
 - login, logout 기능 구현시 아래와 코드 수정 필요
@@ -30,7 +34,7 @@ class Comment(models.Model):
     post = models.ForeignKey('blog.Post', related_name='comments', on_delete=models.CASCADE) 
 </pre>
 
-#### 옵션의 내용은 진행하지 않았음.
+#### 장고걸스 듀토리얼 : 심화 의 옵션의 내용은 진행하지 않았음.
 
 #### 변동사항
 - 본인 댓글의 수정이 가능하게 함.
@@ -39,3 +43,6 @@ class Comment(models.Model):
 #### 차후 수정해야할 것
 - 댓글 작성 및 수정을 detail 페이지에서 할 수 있도록
 - 회원가입 기능 구현
+
+### 배포 링크
+http://shbae.pythonanywhere.com/
