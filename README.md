@@ -1,4 +1,4 @@
-# Django girls blog
+# Django Girls Blog
 
 ### 장고걸스 튜토리얼 (Django Girls Tutorial)
 https://tutorial.djangogirls.org/ko/
@@ -45,4 +45,4 @@ class Comment(models.Model):
 - 회원가입 기능 구현
 
 ### 배포 링크
-http://shbae.pythonanywhere.com/
+**http://shbae.pythonanywhere.com/**
