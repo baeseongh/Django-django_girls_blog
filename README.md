@@ -1,4 +1,4 @@
-# Django-django_girls_blog
+# Django girls blog
 
 ### 장고걸스 튜토리얼 (Django Girls Tutorial)
 https://tutorial.djangogirls.org/ko/
